@@ -39,3 +39,24 @@ IF isAddTask
 	ListKegiatan = APPEND(ListKegiatan, tmpTask)
 	CONTINUE; 
 END IF
+
+VAR isUpdateTask : Boolean
+INPUT ( isUpdateTask)
+IF isUpdateTask
+
+    VAR tmpTask : Task
+	VAR strNotes : string
+	INPUT ( strNote )
+
+    VAR statusNotes : boolean
+    INPUT ( statusNotes )
+
+    tmpTask.note = strNotes
+    tmpTask.status = statusNotes
+
+	VAR indexList : number
+    INPUT ( indexList )
+
+	ListKegiatan[indexList] = tmpTask
+	CONTINUE; 
+END IF
