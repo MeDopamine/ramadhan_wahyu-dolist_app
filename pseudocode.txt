@@ -60,3 +60,14 @@ IF isUpdateTask
 	ListKegiatan[indexList] = tmpTask
 	CONTINUE; 
 END IF
+
+VAR isDeleteTask : Boolean
+INPUT ( isDeleteTask)
+IF isDeleteTask
+	VAR indexList : number
+    INPUT ( indexList )
+
+	ListKegiatan[indexList] = NULL
+	
+    CONTINUE; 
+END IF
