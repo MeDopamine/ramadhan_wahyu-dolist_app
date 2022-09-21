@@ -90,3 +90,13 @@ IF isCompleteTask
 
 	CONTINUE; 
 END IF
+
+VAR isQUIT : boolean
+INPUT ( isQuit )
+
+IF isQuit == true 
+    BREAK;
+END IF
+
+END WHILE
+END
