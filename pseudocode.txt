@@ -71,3 +71,22 @@ IF isDeleteTask
 	
     CONTINUE; 
 END IF
+
+VAR isCompleteTask : Boolean
+INPUT ( isCompleteTask)
+IF isCompleteTask
+	VAR indexList : number
+    INPUT ( indexList )
+
+    VAR tmpTask : Task
+
+    tmpTask = ListKegiatan[indexList]
+
+    IF tmpTask.status == false 
+        tmpTask = true
+    END IF
+
+    ListKegiatan[indexList] = tmpTask
+
+	CONTINUE; 
+END IF
