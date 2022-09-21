@@ -13,3 +13,29 @@ VAR isCompleteTask : Boolean
 VAR isQUIT : boolean
 VAR tmpTask : Task
 VAR strNotes : string
+
+Algoritma
+BEGIN
+
+STRUCT Task {
+    note : string
+    status : boolean
+}
+
+VAR ListKegiatan : []Task
+OUTPUT LlistKegiatan
+WHILE true
+
+VAR isAddTask : Boolean
+INPUT ( isAddTask )
+IF isAddTask
+    VAR tmpTask : Task
+	VAR strNotes : string
+	INPUT ( strNote )
+
+    tmpTask.note = strNotes
+    tmpTask.status = false
+
+	ListKegiatan = APPEND(ListKegiatan, tmpTask)
+	CONTINUE; 
+END IF
