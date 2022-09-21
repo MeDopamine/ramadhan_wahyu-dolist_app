@@ -1,0 +1,15 @@
+Program Do List
+
+Deklarasi
+STRUCT Task {
+    note : string
+    status : boolean
+}
+VAR ListKegiatan : []Task
+VAR isAddTask : Boolean
+VAR isUpdateTask : Boolean
+VAR isDeleteTask : Boolean
+VAR isCompleteTask : Boolean
+VAR isQUIT : boolean
+VAR tmpTask : Task
+VAR strNotes : string
